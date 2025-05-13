@@ -1,5 +1,4 @@
 import 'dotenv/config';
-import { parseStringPromise } from 'xml2js';
 
 export default async function handler(req, res) {
   const { website, prompt } = req.query;
