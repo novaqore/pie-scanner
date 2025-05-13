@@ -34,7 +34,7 @@ export default async function handler(req, res) {
           {
             role: 'system',
             content:
-              'You are a strict JSON-only responder. You return ONLY valid, parsable JSON. Your task is to process the user’s request and output a JSON object like this: { "key": { ... } } or { "key": "value" }. Respond with ONLY parsable JSON.'
+              'You are a website and business analyzer. Respond to the user using all available resources when requested.'
           },
           {
             role: 'user',
