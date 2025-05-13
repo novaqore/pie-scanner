@@ -31,9 +31,9 @@ curl "https://api.piesolutions.ai/api/scan?website=https://novaqore.tech&prompt=
 
 ### ✅ Example Prompt Ideas
 
-* `prompt=List%205%20problems%20with%20this%20site%20and%20suggest%20solutions`
-* `prompt=What%20does%20this%20business%20do%3F%20Summarize%20it%20in%201%20sentence`
-* `prompt=How%20can%20they%20improve%20their%20homepage%20design%3F`
+* `List 5 problems with this site and suggest solutions.`
+* `What does this business do%3F Summarize it in 1 sentence.`
+* `How can they improve their homepage design.`
 
 ---
 
