@@ -23,8 +23,13 @@ GET https://api.piesolutions.ai/api/scan
 
 ### 📥 Example Request
 
+No Prompt Curl
 ```bash
-curl "https://api.piesolutions.ai/api/scan?website=https://novaqore.tech&prompt=what%20do%20they%20do"
+curl "https://api.piesolutions.ai/api/scan?website=https://piesolutions.ai"
+```
+Prompted curl
+```bash
+curl "https://api.piesolutions.ai/api/scan?website=https://piesolutions.ai&prompt=What%20do%20they%20do%20?"
 ```
 
 ---
