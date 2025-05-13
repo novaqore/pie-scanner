@@ -18,8 +18,8 @@ export default async function handler(req, res) {
 
   try {
     const finalPrompt = prompt
-      ? `Visit and analyze the business at ${website}. ${prompt}`
-      : `Visit and analyze the business at ${website}. Based on the website content, SEO, reviews, and social media, return exactly 5 problems and recommended solutions in JSON format only.`;
+      ? `${website} - ${prompt}`
+      : `${website} - Visit the website link and explain the content.`;
 
     const perplexityRes = await fetch('https://api.perplexity.ai/chat/completions', {
       method: 'POST',
