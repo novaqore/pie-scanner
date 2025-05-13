@@ -47,14 +47,7 @@ export default async function handler(req, res) {
     const perplexityData = await perplexityRes.json();
     const aiResponse = perplexityData?.choices?.[0]?.message?.content || '';
 
-    const match = aiResponse.match(/{[\s\S]*}/);
-    if (!match) {
-      throw new Error('No JSON found in AI response');
-    }
-
-    const json = JSON.parse(match[0]);
-
-    return res.status(200).json({ result: json });
+    return res.status(200).json({ result: aiResponse });
   } catch (err) {
     return res.status(500).json({ error: err.message });
   }
